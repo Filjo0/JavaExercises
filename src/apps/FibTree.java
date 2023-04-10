@@ -6,7 +6,6 @@ public class FibTree {
 
         TreeNode node = FibTree.generateArg(5);
         System.out.println(toString(node));
-
     }
 
     public static String toString(TreeNode root) {

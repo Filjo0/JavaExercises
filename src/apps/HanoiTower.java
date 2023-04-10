@@ -13,12 +13,7 @@ public class HanoiTower {
         exchange(from, help, to, from.size());
     }
 
-    private static void exchange(
-            Stack<Integer> from,
-            Stack<Integer> help,
-            Stack<Integer> to,
-            int count
-    ) {
+    private static void exchange(Stack<Integer> from, Stack<Integer> help, Stack<Integer> to, int count) {
         if (count > 0) {
             exchange(from, to, help, count - 1);
             int biggest = from.pop();
